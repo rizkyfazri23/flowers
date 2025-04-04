@@ -1,3 +1,7 @@
+html, body {
+  overflow: auto; /* atau overflow: visible; */
+}
+
 body {
     display: flex;
     justify-content: center;
