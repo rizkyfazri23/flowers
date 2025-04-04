@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can We Talk?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Latar belakang bintang -->
+    <div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
+    </div>
+
+    <div class="container">
+        <h1 id="question">Can we sit down and clear things up?</h1>
+        <div class="buttons" id="buttons">
+            <button class="yes-button" onclick="handleResponse('yes')">Yes</button>
+            <button class="no-button" onclick="handleResponse('no')">No</button>
+        </div>
+
+        <div class="gif_container">
+            <img id="gif" src="https://media1.tenor.com/m/StyK0kLY-5oAAAAC/aminou.gif" alt="Cute GIF">
+        </div>
+
+        <!-- Kotak pesan -->
+        <div id="messageBox" class="hidden">
+            <p>Do you have a message for me?</p>
+            <textarea id="messageInput" placeholder="Write your message here..."></textarea>
+            <button class="send-button" onclick="sendMessage()">Send</button>
+        </div>
+
+        <!-- Kotak bunga -->
+        <div id="flowersBox" class="hidden">
+            <button class="flower-button" onclick="handleFlowersClick()">🌸 Open the flowers! 🌸</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
